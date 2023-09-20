@@ -4,6 +4,7 @@
     }
     
     body {
+        cursor: url('./mole-game/cursor-worm'), auto;
       background-color: #c0c86d;
       display: flex;
       justify-content: center;

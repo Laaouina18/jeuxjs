@@ -15,6 +15,6 @@ const startButton = document.getElementById("startButton");
     startButton.addEventListener("click", () => {
       if (!gameStarted) {
         gameStarted = true;
-        setInterval(showRandomMole, 1000); 
+        setInterval(showRandomMole, 2000); 
       }
     });
