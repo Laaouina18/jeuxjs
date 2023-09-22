@@ -4,7 +4,7 @@
     }
     
     body {
-        cursor: url('./mole-game/cursor-worm'), auto;
+    
       background-color: #c0c86d;
       display: flex;
       justify-content: center;
@@ -48,7 +48,9 @@
       right: 15px;
     }
     
-    
+    .cursor_photo{
+      display: none;
+    }
     
     .gone {
       display: none;
@@ -57,7 +59,12 @@
     .worm {
       width: 1660px;
     }
-    
+    .cursor{
+      cursor: url('./mole-game/cursor.png'), auto;
+    }
+    .curso_click{
+      cursor: url('./mole-game/cursor-worm.png'), auto;
+    }
     .worm-container {
       overflow: hidden;
       transition: width 0.5s ease-in-out;
