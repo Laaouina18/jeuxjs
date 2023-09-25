@@ -28,7 +28,6 @@ function voirPhoto() {
     randomMole.setAttribute("src", "./mole-game/leaving.png")
   }, 1800);
   
-  
 }
 start.addEventListener("click", () => {
   if (!gameStarted) {
