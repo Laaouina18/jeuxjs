@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./style.css">
-  <title>test!</title>
+  <title>Whack-a-Mole Game</title>
 </head>
 
 <body id="mybody">
+  <div id="scoreDisplay">Score : 0</div>
+  <img id="wormImage" src="./mole-game/worm.png" alt="Worm" />
+
   <section class="bg">
     <div class="hole-container">
       <div class="hole" id="hole-0">
         <img data-index="0" src="./mole-game/hungry.png"  alt="mole" class="mole">
-    
       </div>
     </div>
     <div class="hole-container">
@@ -45,8 +47,20 @@
       <div class="hole" id="hole-9"><img data-index="9" src="./mole-game/hungry.png" alt="happy mole" class="mole"></div>
     </div>
   </section>
-  <button id="startButton">Start Game</button>
+
   
+  <section class="win">
+    <img src="./mole-game/win.png" alt="Winner" />
+    <div id="winText">Congratulations! You won!</div>
+  </section>
+  <!-- Ajoutez ceci à votre code HTML -->
+  <input type="text" id="userNameInput" placeholder="Entrez votre nom">
+  <button id="submitNameButton">Valider</button>
+  <button id="startButton" class="button">Start Game</button>
+  
+  <audio id="applauseAudio" src="./mole-game/winer.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

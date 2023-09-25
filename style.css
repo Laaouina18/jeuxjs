@@ -2,7 +2,41 @@
    *{
     box-sizing: border-box;
     }
-    
+    /* Ajoutez ces styles dans votre fichier style.css */
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#userNameInput {
+  display: none; /* Masquer initialement l'input du nom */
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+#submitNameButton {
+  display: none; /* Masquer initialement le bouton de validation */
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
     body {
     
       background-color: #c0c86d;
@@ -40,7 +74,35 @@
       justify-content: center;
       align-items: center;
     }
-    
+    #wormImage{
+      width:0px;
+    }
+    /* Le reste de vos styles CSS existants */
+
+.win {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.win img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#winText {
+  font-size: 24px;
+  color: white;
+  margin-top: 20px;
+}
+
     .mole {
         display:none;
       position: relative;
